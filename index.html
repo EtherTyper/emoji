@@ -11,26 +11,24 @@
   </head>
   <body>
     <section class="page-header">
-      <div>
-        <script>
-          var chain;
+      <script>
+        var chain;
 
-          function load(){
-            var oReq = new XMLHttpRequest();
-            oReq.onload = reqListener;
-            oReq.open("get", "https://www.etherchain.org/api/basic_stats", true);
-            oReq.send();
-          }
+        function load(){
+          var oReq = new XMLHttpRequest();
+          oReq.onload = reqListener;
+          oReq.open("get", "https://www.etherchain.org/api/basic_stats", true);
+          oReq.send();
+        }
 
-          function reqListener(e) {
-            chain = JSON.parse(this.responseText);
-            document.getElementById("time").innerHTML="<h1 class='project-name'><strong><em>"+(1150000-chain.data.blocks[0].number)+" blocks until Homestead!</em></strong></h1>";
-          }
+        function reqListener(e) {
+          chain = JSON.parse(this.responseText);
+          document.getElementById("time").innerHTML="<h1 class='project-name'><strong><em>"+(1150000-chain.data.blocks[0].number)+" blocks until Homestead!</em></strong></h1>";
+        }
 
-          load();
-        </script>
-        <div id="time" style="vertical-align: middle;"/>
-      </div>
+        load();
+      </script>
+      <div id="time" style="vertical-align: middle;"/>
       <br /><br /><br />
       <p class="btn" onclick="load()">Refresh</p>
     </section>
