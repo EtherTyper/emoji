@@ -24,7 +24,7 @@
         function reqListener(e) {
           chain = JSON.parse(this.responseText);
           if (1150000-chain.data.blocks[0].number!=0)
-            document.getElementById("time").innerHTML="<h1 class='project-name'><strong><em>"+(1150000-chain.data.blocks[0].number)+" blocks until Homestead!</em></strong></h1>";
+            document.getElementById("time").innerHTML="<h1 class='project-name'><strong><em>"+(1150000-chain.data.blocks[0].number)+" blocks until Homestead!</em></strong></h1><p class='btn' onclick='load()'>Refresh</p>";
           else
             document.getElementById("time").innerHTML="It's already here on the mainnet!";
         }
@@ -33,7 +33,6 @@
       </script>
       <div id="time" style="display: table-cell; vertical-align: middle;"></div>
       <br /><br /><br />
-      <p class="btn" onclick="load()">Refresh</p>
     </section>
 
     <section class="main-content">
