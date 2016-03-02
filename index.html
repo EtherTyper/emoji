@@ -25,7 +25,7 @@
           chain = JSON.parse(this.responseText);
           if (1150000-chain.data.blocks[0].number!=0){
             document.getElementById("time").innerHTML="<h1 class='project-name'><strong><em>"+(1150000-chain.data.blocks[0].number)+" blocks until Homestead!</em></strong></h1>";
-            for (int i=0; i<3; i++)
+            for (var i=0; i<3; i++)
               document.getElementById("time").innerHTML+="<br />";
             document.getElementById("time").innerHTML+="<p class='btn' onclick='load()'>Refresh</p>";
           } else
