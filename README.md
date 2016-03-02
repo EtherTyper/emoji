@@ -1,2 +1,2 @@
-# emoji
-Displays all of the available GitHub emoji. Title, or code, is available via mouse hover.
+# Homestead Countdown
+You'll always know how far it is to the weet decentralization of Ethereum.
