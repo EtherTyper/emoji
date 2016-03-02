@@ -24,13 +24,14 @@
 
           function reqListener(e) {
             chain = JSON.parse(this.responseText);
-            document.getElementById("time").innerHTML+="<h1 class='project-name'><strong><em>"+(1150000-chain.data.blocks[0].number)+" blocks until Homestead!</em></strong></h1>";
+            document.getElementById("time").innerHTML="<h1 class='project-name'><strong><em>"+(1150000-chain.data.blocks[0].number)+" blocks until Homestead!</em></strong></h1>";
           }
 
           load();
         </script>
         <div id="time" />
       </div>
+      <br /><br /><br />
       <p class="btn" onclick="load()">Refresh</p>
     </section>
 
