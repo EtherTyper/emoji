@@ -12,7 +12,7 @@ This simple web application pulls and displays all of the available GitHub emoji
 3. Press the "View emoji" button, and voila! You will be presented with every emoji currently available on GitHub.
 4. To view the code used to display a specific emoji, find it on the page and hover your mouse over it. The displayed tooltip will correspond to the GitHub code used to insert this emoji.
 - Example format:  
-The corresponding code for the "<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f50e.png?v8" width="20" height="20">" emoji is ":mag_right:" (without quotes)
+The corresponding code for the ":mag_right:" emoji is ": mag_right :" (without spaces!)
 5. Simply add your chosen emoji's corresponding code to your next commit, push, and enjoy your shiny new commit (now with emoji)!   
    
 **Note, the developers of this project are not responsible for damages incurred by using this tool in a corporate setting! Ideally, you would use this to enhance contributions to a personal project. Further, contribution rules are subject to repository-based rules.**
